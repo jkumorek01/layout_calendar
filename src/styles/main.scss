@@ -15,7 +15,9 @@ body {
 
 body {
   margin: 0;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -25,7 +27,6 @@ body {
   flex-wrap: wrap;
   gap: $gap;
   padding: $padding;
-
   width: calc(
     #{$columns} * #{$cell-size} + (#{$columns - 1} * #{$gap}) + 2 * #{$padding}
   );
@@ -35,11 +36,9 @@ body {
     height: $cell-size;
     background: #eee;
     border: $border solid black;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: relative;
     transition: all 0.5s;
 
